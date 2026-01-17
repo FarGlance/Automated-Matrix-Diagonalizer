@@ -1,0 +1,28 @@
+We will use Flask with a javascript file and css file for separate files
+    # We will store the javascript and css in static 
+        # javascript is "script.js"
+        # css is "style.css"
+    
+    # we will store the html in templates as "index.html"
+
+
+Code Requirements
+    # check if diagonalizable - is_diagonalizable
+
+    # if diagonilizable get:
+        #P it is just the eigenvectors
+        #D it is P^-1 A P 
+
+    # if not:
+        # Return false
+
+    # The interface, GUI
+        #Drop down box 2-5
+        #Grid of boxes to enter
+        #Solve Button
+        # if diagonalizable:
+            #Show P 
+            #Show D
+        # if not:
+            # Just say not diagonalizable
+

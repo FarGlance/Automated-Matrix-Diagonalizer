@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated Matrix Diagonalizer</title>
+    <link rel="stylesheet" href="/static/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-effects">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+    </div>
+    
+    <div class="container">
+        <header>
+            <h1>Matrix Diagonalizer</h1>
+            <p class="subtitle">Compute P and D such that P<sup>−1</sup>AP = D</p>
+        </header>
+
+        <main>
+            <section class="input-section glass-card">
+                <h2>Input Matrix A</h2>
+                
+                <div class="size-selector">
+                    <label for="matrix-size">Matrix Size (n × n):</label>
+                    <div class="size-buttons">
+                        <button class="size-btn" data-size="2">2×2</button>
+                        <button class="size-btn active" data-size="3">3×3</button>
+                        <button class="size-btn" data-size="4">4×4</button>
+                        <button class="size-btn" data-size="5">5×5</button>
+                    </div>
+                </div>
+
+                <div class="matrix-input-container">
+                    <div id="matrix-grid" class="matrix-grid"></div>
+                </div>
+
+                <div class="button-group">
+                    <button id="diagonalize-btn" class="primary-btn">
+                        <span class="btn-text">Diagonalize</span>
+                        <span class="btn-loader"></span>
+                    </button>
+                    <button id="clear-btn" class="secondary-btn">Clear</button>
+                    <button id="example-btn" class="secondary-btn">Load Example</button>
+                </div>
+            </section>
+
+            <section id="results-section" class="results-section hidden">
+                <div id="error-message" class="error-card glass-card hidden">
+                    <div class="error-icon">✕</div>
+                    <p id="error-text"></p>
+                </div>
+
+                <div id="not-diagonalizable" class="warning-card glass-card hidden">
+                    <div class="warning-icon">⚠</div>
+                    <h3>Not Diagonalizable</h3>
+                    <p>The matrix does not have n linearly independent eigenvectors and therefore cannot be diagonalized.</p>
+                </div>
+
+                <div id="success-results" class="hidden">
+                    <div class="success-banner glass-card">
+                        <div class="success-icon">✓</div>
+                        <h3>Matrix is Diagonalizable!</h3>
+                    </div>
+
+                    <div class="matrices-grid">
+                        <div class="matrix-card glass-card">
+                            <h3>Matrix P <span class="matrix-label">(Eigenvectors)</span></h3>
+                            <div class="matrix-display" id="matrix-P"></div>
+                        </div>
+
+                        <div class="matrix-card glass-card">
+                            <h3>Matrix D <span class="matrix-label">(Eigenvalues)</span></h3>
+                            <div class="matrix-display" id="matrix-D"></div>
+                        </div>
+                    </div>
+
+                    <div class="verification-section glass-card">
+                        <h3>Verification: P<sup>−1</sup>AP = D</h3>
+                        <div class="equation-display">
+                            <div class="equation-part">
+                                <span class="label">P<sup>−1</sup>AP</span>
+                                <div class="matrix-display" id="matrix-verification"></div>
+                            </div>
+                            <span class="equals">=</span>
+                            <div class="equation-part">
+                                <span class="label">D</span>
+                                <div class="matrix-display" id="matrix-D-verify"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Automated Matrix Diagonalizer | Made By Group 4</p>
+        </footer>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
