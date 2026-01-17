@@ -134,8 +134,7 @@ Input 2x2 Matrix:
 
 **Output:** Error! The matrix is defective and cannot be diagonalized. 
 
-- Explanation: This matrix has an eigenvalue of 1 with a multiplicity of 2, but it only provides one linearly independent eigenvector. Note: Results are only generated for matrices that satisfy the diagonalization theorem.
-
+  - Note: This matrix is considered defective because the eigenvalue 1 has an algebraic multiplicity of 2, but a geometric multiplicity of only 1. Since the matrix lacks a complete set of linearly independent eigenvectors, it does not satisfy the Diagonalization Theorem.
 ---
 
 ## User Instructions
@@ -218,5 +217,6 @@ linalg/
   <span>2025 - 2026</span>
 
 </div>
+
 
 
