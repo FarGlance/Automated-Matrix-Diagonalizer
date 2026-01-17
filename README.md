@@ -2,97 +2,198 @@
 
 <div align="center">
 
-<img src="diagonalizer.png" alt ="Matrix Diagonalizer" width = "120">
+<img src="./templates/diagonalizer.png" alt ="Matrix Diagonalizer" width = "120">
 
 A web application that checks if an n×n matrix (n ≤ 5) is diagonalizable. If so, it computes matrices **P** and **D** such that **P⁻¹AP = D**.
-Web app: https://automated-matrix-diagonalizer.onrender.com
 
 </div>
+
 ---
 
+## Try It Here
+Automated Matrix Diagonalizer: https://automated-matrix-diagonalizer.onrender.com/
+
+---
 ## Table of Contents
 
 - [Automated Matrix Diagonalizer](#automated-matrix-diagonalizer)
-  - [Table of Contents](#table-of-contents)
-  - [About](#about)
-    - [The Power of Diagonalization](#the-power-of-diagonalization)
-    - [Try It Here](#try-it-here)
-  - [Features](#features)
-    - [Eigen-Solver Engine](#eigen-solver-engine)
-    - [User Experience](#user-experience)
-    - [Mathematical Breakdown](#mathematical-breakdown)
-  - [Demo](#demo)
-    - [Diagonalization Example ($A = PDP^{-1}$)](#diagonalization-example)
 
+  - [Table of Contents](#table-of-contents)
+  
+  - [About](#about)
+    - [The Power of Diagonalization](#the-power-of-diagonalization) 
+  - [Features](#features)
+    - [Core Functionality](#core-functionality)
+    - [User Experience](#user-experience)
+    - [Mathematical Intelligence](#mathematical-intelligence)
+  
+  - [Demo](#demo)
+    - [Diagonalization Example (A = PDP⁻¹)](#diagonalization-example)
+  
   - [User Instructions](#user-instructions)
     - [Basic Workflow](#basic-workflow)
-    - [Example Walkthrough](#example-walkthrough)
+  
   - [Operations](#operations)
-    - [Eigenvalues and Eigenvectors](#eigenvalues-and-eigenvectors)
+    - [Diagonalization Process](#diagonalization-process)
+      
   - [Technologies Used](#technologies-used)
     - [Frontend Framework](#frontend-framework)
     - [Backend](#backend)
-    - [Host](#host)
+    - [Deployment and Infrastructure](#deployment-and-infrastructure)
+      
   - [Project Structure](#project-structure)
-  - [License](#license)
-  - [Acknowledgments](#acknowledgments)
-    
+
+ ---
+
+## About
+
+**Automated Matrix Diagonalizer** is a specialized application designed to perform linear algebra computations on square matrices. This program is designed to help students better understand matrix diagonalization through an interactive and easy-to-use interface.
+
+### The Power of Diagonalization
+**Fast Computations**
+- It makes calculating high powers (like A100) nearly instant. Instead of multiplying the whole matrix 100 times, you simply raise the diagonal elements to that power (D100).
+
+**System Simplification**
+- It "decouples" variables in complex systems of equations, allowing you to solve each part independently.
+  
+**Data Insight**
+- It reveals the core "directions" and "strengths" of a transformation, which is essential for things like image compression and search engine algorithms.
+
+---
+
 ## Features
 
-- Dynamic matrix input (2×2 to 5×5)
-- Computes eigenvectors (P) and eigenvalues (D)
-- Verifies P⁻¹AP = D
-- Handles non-diagonalizable matrices
+### Core Functionality
+**Dynamic Matrix Input** 
+- Adjustable matrix size from 2x2 up to 5x5.
+  
+**Automated Diagonalization**
+- Computes eigenvalues and eigenvectors to generate matrices P and D automatically.
+
+### User Experience
+**Clean UI**
+- Centered, responsive design that works on both desktop and mobile browsers.
+  
+**Instant Reset**
+- Features a clear function to quickly reset inputs for new calculations.
+
+### Mathematical Intelligence
+**Automated Validation**
+- Detects if a matrix is non-diagonalizable and provides explanatory feedback.
+  
+**Numerical Precision**
+- Accurately handles complex calculations involving integers and decimals.
+
+
+  
+**IMPORTANT NOTICE:** This application is hosted on Render’s free tier. If the site has been inactive for more than 15 minutes, it may take approximately 50 seconds to spin up and load the page. Please be patient while the server restarts.
+
+
 
 ---
 
-## Quick Start
+## Demo
 
-### 1. Install Dependencies
+### Diagonalization Example (A = PDP⁻¹)
 
-```bash
-pip install -r requirements.txt
-```
+Input 3x3 Matrix:
+[ 2  0  0 ]
 
-### 2. Run the Server
+[ 1  3  0 ]
 
-```bash
-python app.py
-```
+[ 0  0  4 ]
 
-### 3. Open in Browser
 
-Go to: **http://127.0.0.1:5000**
+Output:
+Eigenvalues: 2.0, 3.0, 4.0
+
+Modal Matrix (P):
+
+[ 1.0  0.0  0.0 ]
+
+[-1.0  1.0  0.0 ]
+
+[ 0.0  0.0  1.0 ]
+
+
+Diagonal Matrix (D):
+
+[ 2.0  0.0  0.0 ]
+
+[ 0.0  3.0  0.0 ]
+
+[ 0.0  0.0  4.0 ]
+
+Validation Example (Non-Diagonalizable)
+Input 2x2 Matrix: 
+
+[ 1  1 ]
+
+[ 0  1 ]
+
+
+**Output:** Error! The matrix is defective and cannot be diagonalized. Explanation: This matrix has an eigenvalue of 1 with a multiplicity of 2, but it only provides one linearly independent eigenvector. Note: Results are only generated for matrices that satisfy the diagonalization theorem.
 
 ---
 
-## For VS Code Live Share Collaborators
+## User Instructions
 
-If you're joining via Live Share, the host needs to share port 5000:
-
-### Host Instructions:
-1. Open the **Live Share** panel (bottom left)
-2. Under **Shared Servers**, click **"Share server..."**
-3. Enter port: `5000`
-4. Select **Public** access
-
-### Guest Instructions:
-1. Look for **Shared Servers** in the Live Share panel
-2. Click on the shared port 5000
-3. It will open in your browser automatically
-
-> **Note:** If you want to run locally, install dependencies first with `pip install -r requirements.txt`
+### Basic Workflow
+1. **Select Matrix Size**
+   - Choose your desired dimension (2x2 to 5x5) from the interface.
+3. **Data Entry**
+   - Enter the numerical values into the matrix input fields for Matrix A.
+5. **Submit**
+   - Click the “Diagonalize” button to start the computation.
+6. **Review Result**
+   - If successful, the app displays the Eigenvalues, Matrix P, and Matrix D.
+    - If the matrix is not diagonalizable, an explanatory message is shown.
 
 ---
 
-## Tech Stack
+## Operations
 
-- **Backend:** Python Flask + NumPy
-- **Frontend:** HTML, CSS, JavaScript
+### Diagonalization Process
+ - The user selects a matrix size and inputs values through the web interface.
+ - The frontend sends the matrix to the backend for validation and processing.
+ - The backend computes eigenvalues and eigenvectors and checks diagonalizability.
+ - If possible, matrices P and D are constructed and verified using P⁻¹AP = D.
+ - Results are displayed to the user, or an explanatory message is shown if diagonalization is not possible.
+
+---
+
+## Technologies Used
+
+### Frontend Framework
+**CSS:** Used for layout, grid styling, and ensuring modern, responsive functions.
+
+**JavaScript:** Manages client-side logic, such as dynamic grip resizing and sending data to the server.
+
+**HTML:** Provides the fundamental structures for the web app and input forms.
+
+### Backend
+**Python:** Primary language for server-side processing and mathematical logic.
+
+**Flask:** A lightweight framework used to bridge the interface with the Python logic.
+
+**NumPy:** A high-performance library used to calculate eigenvalues and eigenvectors with high precision.
+
+### Deployment and Infrastructure
+**Render:** The cloud platform used for live hosting, ensuring the application is accessible online.
+
+**GitHub:** Used for version control and repository management.
+
+**Procfile:** Configures the server environment for a stable deployment on Render.
 
 ---
 
 ## Project Structure
+
+- Uses a modular project structure, separating backend logic, frontend templates, and static assets for better organization and maintainability.
+- Backend logic is handled in app.py, which manages server operations and matrix diagonalization computations.
+- The templates directory contains the HTML file that defines the user interface and displays results.
+- The static directory stores CSS and JavaScript files for styling, input handling, and frontend interaction.
+- A requirements.txt  file lists all necessary dependencies for easy and consistent setup.
 
 ```
 linalg/
@@ -104,5 +205,4 @@ linalg/
     ├── index.css          # Styling
     └── script.js          # Frontend logic
 ```
-
 
