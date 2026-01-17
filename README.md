@@ -19,9 +19,7 @@ A web application that checks if an n×n matrix (n ≤ 5) is diagonalizable. If 
 ## Table of Contents
 
 - [Automated Matrix Diagonalizer](#automated-matrix-diagonalizer)
-
   - [Table of Contents](#table-of-contents)
-  
   - [About](#about)
     - [The Power of Diagonalization](#the-power-of-diagonalization) 
   - [Features](#features)
@@ -218,6 +216,7 @@ linalg/
   <span>2025 - 2026</span>
 
 </div>
+
 
 
 
