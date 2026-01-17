@@ -1,7 +1,41 @@
 # Automated Matrix Diagonalizer
 
+<div align="center">
+
+<img src="diagonalizer.png" alt ="Matrix Diagonalizer" width = "120">
+
 A web application that checks if an n×n matrix (n ≤ 5) is diagonalizable. If so, it computes matrices **P** and **D** such that **P⁻¹AP = D**.
 
+</div>
+---
+
+## Table of Contents
+
+- [Automated Matrix Diagonalizer](#automated-matrix-diagonalizer)
+  - [Table of Contents](#table-of-contents)
+  - [About](#about)
+    - [The Power of Diagonalization](#the-power-of-diagonalization)
+    - [Try It Here](#try-it-here)
+  - [Features](#features)
+    - [Eigen-Solver Engine](#eigen-solver-engine)
+    - [User Experience](#user-experience)
+    - [Mathematical Breakdown](#mathematical-breakdown)
+  - [Demo](#demo)
+    - [Diagonalization Example ($A = PDP^{-1}$)](#diagonalization-example)
+
+  - [User Instructions](#user-instructions)
+    - [Basic Workflow](#basic-workflow)
+    - [Example Walkthrough](#example-walkthrough)
+  - [Operations](#operations)
+    - [Eigenvalues and Eigenvectors](#eigenvalues-and-eigenvectors)
+  - [Technologies Used](#technologies-used)
+    - [Frontend Framework](#frontend-framework)
+    - [Backend](#backend)
+    - [Host](#host)
+  - [Project Structure](#project-structure)
+  - [License](#license)
+  - [Acknowledgments](#acknowledgments)
+    
 ## Features
 
 - Dynamic matrix input (2×2 to 5×5)
@@ -69,3 +103,4 @@ linalg/
     ├── index.css          # Styling
     └── script.js          # Frontend logic
 ```
+
