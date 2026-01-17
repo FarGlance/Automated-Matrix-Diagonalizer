@@ -49,6 +49,7 @@ Automated Matrix Diagonalizer: https://automated-matrix-diagonalizer.onrender.co
 
 **Automated Matrix Diagonalizer** is a specialized application designed to perform linear algebra computations on square matrices. This program is designed to help students better understand matrix diagonalization through an interactive and easy-to-use interface.
 
+
 ### The Power of Diagonalization
 **Fast Computations**
 - It makes calculating high powers (like A100) nearly instant. Instead of multiplying the whole matrix 100 times, you simply raise the diagonal elements to that power (D100).
@@ -64,27 +65,18 @@ Automated Matrix Diagonalizer: https://automated-matrix-diagonalizer.onrender.co
 ## Features
 
 ### Core Functionality
-**Dynamic Matrix Input** 
-- Adjustable matrix size from 2x2 up to 5x5.
-  
-**Automated Diagonalization**
-- Computes eigenvalues and eigenvectors to generate matrices P and D automatically.
+- **Dynamic Matrix Input** - Adjustable matrix size from 2x2 up to 5x5.
+- **Automated Diagonalization** - Computes eigenvalues and eigenvectors to generate matrices P and D automatically.
 
 ### User Experience
-**Clean UI**
-- Centered, responsive design that works on both desktop and mobile browsers.
-  
-**Instant Reset**
-- Features a clear function to quickly reset inputs for new calculations.
+- **Clean UI** - Centered, responsive design that works on both desktop and mobile browsers. 
+- **Instant Reset** - Features a clear function to reset inputs for new calculations quickly.
+- **One Click “Load Example”** - Instantly fills up the grid with a working matrix for immediate testing.
+
 
 ### Mathematical Intelligence
-**Automated Validation**
-- Detects if a matrix is non-diagonalizable and provides explanatory feedback.
-  
-**Numerical Precision**
-- Accurately handles complex calculations involving integers and decimals.
-
-
+- **Automated Validation** - Detects if a matrix is non-diagonalizable and provides explanatory feedback.
+- **Numerical Precision** - Accurately handles complex calculations involving integers and decimals.
   
 **IMPORTANT NOTICE:** This application is hosted on Render’s free tier. If the site has been inactive for more than 15 minutes, it may take approximately 50 seconds to spin up and load the page. Please be patient while the server restarts.
 
@@ -96,8 +88,9 @@ Automated Matrix Diagonalizer: https://automated-matrix-diagonalizer.onrender.co
 
 ### Diagonalization Example (A = PDP⁻¹)
 
-```
 Input 3x3 Matrix:
+
+```
 [ 2  0  0 ]
 
 [ 1  3  0 ]
@@ -108,18 +101,20 @@ Input 3x3 Matrix:
 Output:
 Eigenvalues: 2.0, 3.0, 4.0
 
-```
+
 Modal Matrix (P):
 
+```
 [ 1.0  0.0  0.0 ]
 
 [-1.0  1.0  0.0 ]
 
 [ 0.0  0.0  1.0 ]
-
+```
 
 Diagonal Matrix (D):
 
+```
 [ 2.0  0.0  0.0 ]
 
 [ 0.0  3.0  0.0 ]
@@ -129,9 +124,9 @@ Diagonal Matrix (D):
 
 Validation Example (Non-Diagonalizable)
 
-```
-Input 2x2 Matrix: 
+Input 2x2 Matrix:
 
+```
 [ 1  1 ]
 
 [ 0  1 ]
@@ -146,15 +141,15 @@ Input 2x2 Matrix:
 ## User Instructions
 
 ### Basic Workflow
-1. **Select Matrix Size**
-   - Choose your desired dimension (2x2 to 5x5) from the interface.
-3. **Data Entry**
-   - Enter the numerical values into the matrix input fields for Matrix A.
-5. **Submit**
-   - Click the “Diagonalize” button to start the computation.
-6. **Review Result**
-   - If successful, the app displays the Eigenvalues, Matrix P, and Matrix D.
-    - If the matrix is not diagonalizable, an explanatory message is shown.
+ 1. **Select Matrix Size**
+     - Choose your desired dimension (2x2 to 5x5) from the interface.
+ 2. **Data Entry**
+     - Enter the numerical values into the matrix input fields for Matrix A.
+ 3. **Submit**
+     - Click the “Diagonalize” button to start the computation.
+ 4. **Review Result**
+     - If successful, the app displays the Eigenvalues, Matrix P, and Matrix D.
+      - If the matrix is not diagonalizable, an explanatory message is shown.
 
 ---
 
@@ -172,25 +167,25 @@ Input 2x2 Matrix:
 ## Technologies Used
 
 ### Frontend Framework
-**CSS:** Used for layout, grid styling, and ensuring modern, responsive functions.
+  **CSS:** Used for layout, grid styling, and ensuring modern, responsive functions.
 
-**JavaScript:** Manages client-side logic, such as dynamic grip resizing and sending data to the server.
+  **JavaScript:** Manages client-side logic, such as dynamic grip resizing and sending data to the server.
 
-**HTML:** Provides the fundamental structures for the web app and input forms.
+  **HTML:** Provides the fundamental structures for the web app and input forms.
 
 ### Backend
-**Python:** Primary language for server-side processing and mathematical logic.
+  **Python:** Primary language for server-side processing and mathematical logic.
 
-**Flask:** A lightweight framework used to bridge the interface with the Python logic.
+  **Flask:** A lightweight framework used to bridge the interface with the Python logic.
 
-**NumPy:** A high-performance library used to calculate eigenvalues and eigenvectors with high precision.
+  **NumPy:** A high-performance library used to calculate eigenvalues and eigenvectors with high precision.
 
 ### Deployment and Infrastructure
-**Render:** The cloud platform used for live hosting, ensuring the application is accessible online.
+  **Render:** The cloud platform used for live hosting, ensuring the application is accessible online.
 
-**GitHub:** Used for version control and repository management.
+  **GitHub:** Used for version control and repository management.
 
-**Procfile:** Configures the server environment for a stable deployment on Render.
+  **Procfile:** Configures the server environment for a stable deployment on Render.
 
 ---
 
@@ -223,4 +218,5 @@ linalg/
   <span>2025 - 2026</span>
 
 </div>
+
 
