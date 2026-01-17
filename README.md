@@ -154,11 +154,15 @@ Input 2x2 Matrix:
 ## Operations
 
 ### Diagonalization Process
- - The user selects a matrix size and inputs values through the web interface.
- - The frontend sends the matrix to the backend for validation and processing.
- - The backend computes eigenvalues and eigenvectors and checks diagonalizability.
- - If possible, matrices P and D are constructed and verified using P⁻¹AP = D.
- - Results are displayed to the user, or an explanatory message is shown if diagonalization is not possible.
+   **1.** The user selects a matrix size and inputs values through the web interface.
+  
+   **2.** The frontend sends the matrix to the backend for validation and processing.
+  
+   **3.** The backend computes eigenvalues and eigenvectors and checks diagonalizability.
+   
+   **4.** If possible, matrices P and D are constructed and verified using P⁻¹AP = D.
+  
+   **5.** Results are displayed to the user, or an explanatory message is shown if diagonalization is not possible.
 
 ---
 
@@ -216,6 +220,7 @@ linalg/
   <span>2025 - 2026</span>
 
 </div>
+
 
 
 
