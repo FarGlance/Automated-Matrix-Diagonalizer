@@ -96,17 +96,19 @@ Automated Matrix Diagonalizer: https://automated-matrix-diagonalizer.onrender.co
 
 ### Diagonalization Example (A = PDP⁻¹)
 
+```
 Input 3x3 Matrix:
 [ 2  0  0 ]
 
 [ 1  3  0 ]
 
 [ 0  0  4 ]
-
+```
 
 Output:
 Eigenvalues: 2.0, 3.0, 4.0
 
+```
 Modal Matrix (P):
 
 [ 1.0  0.0  0.0 ]
@@ -123,16 +125,21 @@ Diagonal Matrix (D):
 [ 0.0  3.0  0.0 ]
 
 [ 0.0  0.0  4.0 ]
+```
 
 Validation Example (Non-Diagonalizable)
+
+```
 Input 2x2 Matrix: 
 
 [ 1  1 ]
 
 [ 0  1 ]
+```
 
+**Output:** Error! The matrix is defective and cannot be diagonalized. 
 
-**Output:** Error! The matrix is defective and cannot be diagonalized. Explanation: This matrix has an eigenvalue of 1 with a multiplicity of 2, but it only provides one linearly independent eigenvector. Note: Results are only generated for matrices that satisfy the diagonalization theorem.
+- Explanation: This matrix has an eigenvalue of 1 with a multiplicity of 2, but it only provides one linearly independent eigenvector. Note: Results are only generated for matrices that satisfy the diagonalization theorem.
 
 ---
 
@@ -205,4 +212,5 @@ linalg/
     ├── index.css          # Styling
     └── script.js          # Frontend logic
 ```
+
 
