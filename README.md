@@ -51,14 +51,9 @@ A web application that checks if an n×n matrix (n ≤ 5) is diagonalizable. If 
 
 
 ### The Power of Diagonalization
-**Fast Computations**
-- It makes calculating high powers (like A100) nearly instant. Instead of multiplying the whole matrix 100 times, you simply raise the diagonal elements to that power (D100).
-
-**System Simplification**
-- It "decouples" variables in complex systems of equations, allowing you to solve each part independently.
-  
-**Data Insight**
-- It reveals the core "directions" and "strengths" of a transformation, which is essential for things like image compression and search engine algorithms.
+- **Fast Computations**: It makes calculating high powers (like A100) nearly instant. Instead of multiplying the whole matrix 100 times, you simply raise the diagonal elements to that power (D100).
+- **System Simplification**: It "decouples" variables in complex systems of equations, allowing you to solve each part independently.
+- **Data Insight**: It reveals the core "directions" and "strengths" of a transformation, which is essential for things like image compression and search engine algorithms.
 
 ---
 
@@ -169,25 +164,19 @@ Input 2x2 Matrix:
 ## Technologies Used
 
 ### Frontend Framework
-  **CSS:** Used for layout, grid styling, and ensuring modern, responsive functions.
-
-  **JavaScript:** Manages client-side logic, such as dynamic grip resizing and sending data to the server.
-
-  **HTML:** Provides the fundamental structures for the web app and input forms.
+-  **CSS:** Used for layout, grid styling, and ensuring modern, responsive functions.
+-  **JavaScript:** Manages client-side logic, such as dynamic grip resizing and sending data to the server.
+-  **HTML:** Provides the fundamental structures for the web app and input forms.
 
 ### Backend
-  **Python:** Primary language for server-side processing and mathematical logic.
-
-  **Flask:** A lightweight framework used to bridge the interface with the Python logic.
-
-  **NumPy:** A high-performance library used to calculate eigenvalues and eigenvectors with high precision.
+-  **Python:** Primary language for server-side processing and mathematical logic.
+-  **Flask:** A lightweight framework used to bridge the interface with the Python logic.
+-  **NumPy:** A high-performance library used to calculate eigenvalues and eigenvectors with high precision.
 
 ### Deployment and Infrastructure
-  **Render:** The cloud platform used for live hosting, ensuring the application is accessible online.
-
-  **GitHub:** Used for version control and repository management.
-
-  **Procfile:** Configures the server environment for a stable deployment on Render.
+-  **Render:** The cloud platform used for live hosting, ensuring the application is accessible online.
+-  **GitHub:** Used for version control and repository management.
+-  **Procfile:** Configures the server environment for a stable deployment on Render.
 
 ---
 
@@ -220,6 +209,7 @@ linalg/
   <span>2025 - 2026</span>
 
 </div>
+
 
 
 
