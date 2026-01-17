@@ -80,7 +80,6 @@ A web application that checks if an n×n matrix (n ≤ 5) is diagonalizable. If 
 - **Automated Validation** - Detects if a matrix is non-diagonalizable and provides explanatory feedback.
 - **Numerical Precision** - Accurately handles complex calculations involving integers and decimals.
   
-> **IMPORTANT NOTICE:** This application is hosted on Render’s free tier. If the site has been inactive for more than 15 minutes, it may take approximately 50 seconds to spin up and load the page. Please be patient while the server restarts.
 
 
 
@@ -219,6 +218,7 @@ linalg/
   <span>2025 - 2026</span>
 
 </div>
+
 
 
 
