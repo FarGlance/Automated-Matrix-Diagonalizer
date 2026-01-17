@@ -5,6 +5,7 @@
 <img src="diagonalizer.png" alt ="Matrix Diagonalizer" width = "120">
 
 A web application that checks if an n×n matrix (n ≤ 5) is diagonalizable. If so, it computes matrices **P** and **D** such that **P⁻¹AP = D**.
+Web app: https://automated-matrix-diagonalizer.onrender.com
 
 </div>
 ---
@@ -103,4 +104,5 @@ linalg/
     ├── index.css          # Styling
     └── script.js          # Frontend logic
 ```
+
 
