@@ -11,7 +11,9 @@ A web application that checks if an n×n matrix (n ≤ 5) is diagonalizable. If 
 ---
 
 ## Try It Here
-Automated Matrix Diagonalizer: https://automated-matrix-diagonalizer.onrender.com/
+**Live Application:** [https://automated-matrix-diagonalizer.onrender.com/](https://automated-matrix-diagonalizer.onrender.com/)
+
+> **Note:** This application is hosted on Render’s free tier. If the site has been inactive, it may take approximately 50 seconds to spin up. Please be patient while the server restarts.
 
 ---
 ## Table of Contents
@@ -78,7 +80,7 @@ Automated Matrix Diagonalizer: https://automated-matrix-diagonalizer.onrender.co
 - **Automated Validation** - Detects if a matrix is non-diagonalizable and provides explanatory feedback.
 - **Numerical Precision** - Accurately handles complex calculations involving integers and decimals.
   
-**IMPORTANT NOTICE:** This application is hosted on Render’s free tier. If the site has been inactive for more than 15 minutes, it may take approximately 50 seconds to spin up and load the page. Please be patient while the server restarts.
+> **IMPORTANT NOTICE:** This application is hosted on Render’s free tier. If the site has been inactive for more than 15 minutes, it may take approximately 50 seconds to spin up and load the page. Please be patient while the server restarts.
 
 
 
@@ -134,7 +136,7 @@ Input 2x2 Matrix:
 
 **Output:** Error! The matrix is defective and cannot be diagonalized. 
 
-  - Note: This matrix is considered defective because the eigenvalue 1 has an algebraic multiplicity of 2, but a geometric multiplicity of only 1. Since the matrix lacks a complete set of linearly independent eigenvectors, it does not satisfy the Diagonalization Theorem.
+> Note: This matrix is considered defective because the eigenvalue 1 has an algebraic multiplicity of 2, but a geometric multiplicity of only 1. Since the matrix lacks a complete set of linearly independent eigenvectors, it does not satisfy the Diagonalization Theorem.
 ---
 
 ## User Instructions
@@ -217,6 +219,7 @@ linalg/
   <span>2025 - 2026</span>
 
 </div>
+
 
 
 
