@@ -213,4 +213,14 @@ linalg/
     └── script.js          # Frontend logic
 ```
 
+---
+
+<div align="center">
+
+  <p><i>Final Requirement for MATH 206 (Linear Algebra)</i></p>
+  <strong>Group 4 • BSCS 2-1</strong>
+  <br>
+  <span>2025 - 2026</span>
+
+</div>
 
